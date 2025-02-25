@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC Web Application</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/chat.css">
+   <link rel="stylesheet" href="../assets/css/social.css">
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../assets/images/logos/myLogo.svg" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="domain.html">DOMAINS</a></li>
+            <li><a href="recr.html">RECRUITMENT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Enhance Your Future With Enlectic Research Center</h1>
+        <p>
+          <div class="typing-effect" style="font-size: 20px;">
+            <pre id="text"></pre>
+        </div>
+        
+        </p>
+        <a href="contact.html" class="hero-btn">Get Connected</a>
+      </div>
+      
+      <div >
+        <a href="#domain">
+        <div id="bcontainer" style="margin-top: 460px;">
+         <button class="learn-more" onclick="scrollDown()">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span   class="button-text">Learn More</span>
+          </button>
+        </div> </a> </div>
+
+        
+        <div class="icons" style="padding: 20px; margin-top:-180px;margin-left:40% ; display: flex;">
+
+          <div class="wrapper1">
+           
+            <div id="spe" class="button">
+               <div class="icon">
+                  <i id="socailm" class="fab fa-facebook-f"></i>
+               </div>
+               <span>Facebook</span>
+            </div>
+          
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-twitter"></i>
+               </div>
+               <span>Twitter</span>
+            </div>
+            <a href="https://www.instagram.com/enlecticresearchcentre/?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: black;">
+            <div class="button" id="spe2">
+               <div class="icon">
+                  <i class="fab fa-instagram"></i>
+               </div>
+               <span>Instagram</span>
+            </div>
+            </a>
+            <a href="https://www.linkedin.com/company/enlectic-research-centre/about/" target="_blank" style="color: black;">
+            <div class="button" id="spe1">
+               <div class="icon">
+                  <i class="fab fa-linkedin"></i>
+               </div>
+               <span>Linked in</span>
+            </div>
+          </a>
+         </div>  
+      </div>
+
+    </section>
+
+    
+
+
+    <section class="domain" id="domain">
+      <h1>Domains In which We Work</h1>
+      <p>
+        Guiding Your Tech Journey ....
+      </p>
+
+      <div class="row">
+        <div class="domain-col">
+          <h3>App Development</h3>
+          <p>
+            We specialize in Android development, crafting feature-rich mobile applications tailored to your specific requirements and business objectives
+          </p>
+        </div>
+
+        <div class="domain-col">
+          <h3>Buisness Model</h3>
+          <p>
+            We follow a flexible and adaptable business model, tailoring our services to suit the unique needs and goals of each client
+          </p>
+        </div>
+
+        <div class="domain-col">
+          <h3>Competitive Coding</h3>
+          <p>
+            "Flexibility is a key aspect of our competitive coding business model, offering various engagement options to accommodate individual learning preferences and goals.
+          </p>
+        </div>
+
+        <div class="domain-col">
+          <h3>Web Develepment</h3>
+          <p>
+            Flexibility is the hallmark of our web development business model, adapting our services to meet the diverse needs and objectives of each project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <section class="cta">
+      <h1>
+        Get Connected With Us With <br />
+        No Branch Restriction
+      </h1>
+      <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" style="margin-top: -100px;">
+      <h4 style="font-size: 26px;">About us</h4>
+      <p>
+        <span > Ready to embark on a journey of endless innovation?
+        <br>
+        join us today and be part of an inspiring community that shapes the future through code.</span>
+      </p>
+      <br>
+      <br>
+      <p >Maintained And Managed By Web Team Of ERC</p>
+    </section>
+    <!-- Javascript for toggeling menu -->
+
+    <!-- <script src="chat.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="response.js"></script>
+
+    <script>
+     function scrollDown() {
+    const scrollStep = 15; // Adjust the scrolling speed as needed (larger number is faster)
+    const scrollLimit = 753; // Adjust the scrolling limit in pixels
+
+    let scrollPosition = window.scrollY;
+
+    function step() {
+        scrollPosition += scrollStep;
+        if (scrollPosition < scrollLimit) {
+            window.scrollTo(0, scrollPosition);
+            setTimeout(step, 15);
+        }
+    }
+
+    step();
+}
+
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.display = "block";
+        
+      }
+
+      function hideMenu() {
+        if (navLinks.style.maxWidth <= "700px") {
+          navLinks.style.display = "none";
+        }
+      }
+    </script>
+    
+ 
+
+
+
+      <!-- CHAT BAR BLOCK -->
+      <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!              
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <!-- time visible area -->
+                            <h5 id="chat-timestamp"  style="color: #aaa;"></h5>   
+                            <p id="botStarterMessage" class="botText"><span></span></p>
+                            <p id="botsecStarterMessage" class="botText"><span></span></p>
+                          
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Press 'Enter' to send message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../assets/js/typing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/js/response.js"></script>
+    <script src="../assets/js/chat.js"></script>
+
+
+  </body>
+</html>

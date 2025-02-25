@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC Web Application</title>
+    <link rel="stylesheet" href="../assets/css/domainstyle.css" />
+    <!-- googlefonts -->
+    <link rel="stylesheet" href="../assets/css/domain.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="../assets/images/logos/myLogo.svg" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="domain.html">DOMAINS</a></li>
+            <li><a href="recr.html">RECRUITMENT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="container">
+        <div class="card">
+          <div class="image">
+            <img href="#" src="../assets/images/logos/web.jpg" />
+          </div>
+          <div class="content">
+            <h3>Web development</h3>
+            <p>
+              The art of creating websites and web application enabling seamless
+              user experiences and efficient digital solutions.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img href="#" src="../assets/images/logos/bus.jpg" />
+          </div>
+          <div class="content">
+            <h3>Business</h3>
+            <p>
+              Effective business development requires the ability to build trust
+              and credibility through meaningful relationships.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img href="#" src="../assets/images/logos/androidg.png" />
+          </div>
+          <div class="content">
+            <h3>Android</h3>
+            <p>
+              Android, a gateway to limitless possibilities, where user
+              experience meets technological powers.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img href="#" src="../assets/images/logos/competitive.png" />
+          </div>
+          <div class="content">
+            <h3>competitive coding</h3>
+            <p>
+              "Mastering competitive coding hones problem-solving skills for the
+              digital battlefield."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascript for toggeling menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+
+      function hideMenu() {
+        if (navLinks.style.maxWidth <= "700px") {
+          navLinks.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

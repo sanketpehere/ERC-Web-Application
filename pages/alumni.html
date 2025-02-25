@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC Web Application</title>
+    <link rel="stylesheet" href="../assets/css/alumini.css" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="../assets/images/logos/myLogo.svg" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="domain.html">DOMAINS</a></li>
+            <li><a href="recr.html">RECRUITMENT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="mainhold">
+        <b> <p class="title">Faculty</p></b>
+        <div class="card-container" id="teacher-id">
+          <div class="card">
+            <div class="card-front">
+              <img
+                class="card-image"
+                src="../assets/images/alumini/Dr.S. U. Ghumare.jpg"
+                alt="Profile Image"
+              />
+              <div class="card-name">Dr. S. U. Ghumbre</div>
+              <div class="det">Professor, Head of Comp. Dept.</div>
+            </div>
+            <div class="card-back">
+              <div class="card-name">Professor, Head of Comp. Dept.</div>
+              <!-- <div class="det">rtCamp.</div> -->
+              <ul class="list">
+                <li>
+                  <a href="#" target="_blank">
+                    <!-- <i class="fab fa-facebook-f icon"></i> -->
+                    <i class="fab fa-github icon" id="popUp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <!-- <i class="fab fa-twitter icon"></i
+                  > -->
+                    <i class="fab fa-instagram icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/shreyas-ikhar/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-front">
+              <img
+                class="card-image"
+                src="../assets/images/alumini/kulkarniP.jpg"
+                alt="Profile Image"
+              />
+              <div class="card-name">Smt. Kulkarni Pallavi Vitthalrao</div>
+              <div class="det">Assistant Professor</div>
+            </div>
+            <div class="card-back">
+              <div class="card-name">Assistant Professor</div>
+              <!-- <div class="det">Tata Consultancy Services.</div> -->
+              <ul class="list">
+                <li>
+                  <a href="#" target="_blank">
+                    <!-- <i class="fab fa-facebook-f icon"></i>
+                     -->
+                    <i class="fab fa-github icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <!-- <i class="fab fa-twitter icon"></i
+                  > -->
+                    <i class="fab fa-instagram icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rachana-sankpal-411482192"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!first Container>
+        <b> <p class="title">Alumni</p></b>
+        <div class="master-card">
+          <div class="card-container">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/shreyas.png"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Shreyas Ikhar</div>
+                <div class="det">WordPress Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">WordPress Engineer at</div>
+                <div class="det">rtCamp.</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-twitter icon"></i> -->
+                      <i class="fab fa-instagram icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/shreyas-ikhar/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/rachana.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Rachana Sankpal</div>
+                <div class="det">System Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">System Engineer at</div>
+                <div class="det">Tata Consultancy Services.</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-twitter icon"></i
+                    > -->
+                      <i class="fab fa-instagram icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/rachana-sankpal-411482192"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/abhishek.jpeg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Abhishek Wadmare</div>
+                <div class="det">Assitant System engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Assitant System engineer</div>
+                <div class="det">Tata Consultancy Services</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/abhishek-wadmare-264831193"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/gautam.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Gautam Helange</div>
+                <div class="det">Android Developer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Android Developer</div>
+                <div class="det">3 years of experience</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/gautammh/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!4th Container>
+
+          <div class="card-container" id="second">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/rohini.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Rohini Kulkarni</div>
+                <div class="det">student at Nordhausen</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Student at</div>
+                <div class="det">Nordhausen,Germany</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/rohini-kulkarni-260914169"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/aniket.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Ankit Pareek</div>
+                <div class="det">Mechanical Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Mechanical Engineer</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/ankitpareek99"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Pushkar.jpeg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Pushkar Marathe</div>
+                <div class="det">Synpulse Management Consulting</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Trainee Analyst at</div>
+                <div class="det">Synpulse Management Consulting</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/pushkar-marathe-14323b172"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Syed.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Syed Kaunain Mehraj</div>
+                <div class="det">Co-Founder</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Co-Founder</div>
+                <div class="det">Developing To Developed</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/syed-kaunain-mehraj-a91332175"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!3rd Container>
+        <div class="master-card">
+          <div class="card-container">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Kalyani.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Kalyani Kadam</div>
+                <div class="det">Software Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Software Engineer</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/kalyani-kadam-07510b220/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/harshada.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Harshada Kangude</div>
+                <div class="det">Software Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Software Engineer</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/harshada-kangude-21aa6a221"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Twinkal.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Twinkal Meshram</div>
+                <div class="det">Cyber Security Analyst</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Cyber Security Analyst</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/twinkal-meshram-85b7951a9/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/shantanu.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Shantanu Paturkar</div>
+                <div class="det">HackerRank 5🌟</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">5🌟 in</div>
+                <div class="det">HackerRank</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/shantanu-paturkar-3a29181a5/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!4th Container>
+
+          <div class="card-container" id="second">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/kishori.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Kishori Jathar</div>
+                <div class="det">Associate Analyst</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Associate Analyst at</div>
+                <div class="det">JADE Global Pvt. Ltd.</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/kishori-jathar-77258a195"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Sampada.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Sampada Chhabu Gunjal</div>
+                <div class="det">Persuing M.B.A.</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Persuing</div>
+                <div class="det">M.B.A.</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/sampada-gunjal-68912b217"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/Snehal (2).jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Snehal Mali</div>
+                <div class="det">Software Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Software Engineer</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/snehal-mali-167747218/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/spadhan.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Spandan Pagar</div>
+                <div class="det">Data Science Intern</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Data Science Intern at</div>
+                <div class="det">Prodigy InfoTech</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/spandan-pagar-6388971ba"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="master-card">
+          <div class="card-container">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/profile.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Vaishnavi Yellure</div>
+                <div class="det">Android Developer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Android Developer</div>
+
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/vaishnavi-yelure-b85126192/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-front">
+                <img
+                  class="card-image"
+                  src="../assets/images/alumini/profile.jpg"
+                  alt="Profile Image"
+                />
+                <div class="card-name">Pratika Shankar Jadhav</div>
+                <div class="det">Software Engineer</div>
+              </div>
+              <div class="card-back">
+                <div class="card-name">Software Engineer</div>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <!-- <i class="fab fa-facebook-f icon"></i> -->
+                      <i class="fab fa-github icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/pratika-jadhav-62a607215"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Javascript for toggeling menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+
+      function hideMenu() {
+        if (navLinks.style.maxWidth <= "700px") {
+          navLinks.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

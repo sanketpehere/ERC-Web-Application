@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC Web Application</title>
+    <link rel="stylesheet" href="../assets/css/recr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="../assets/images/logos/myLogo.svg" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="domain.html">DOMAINS</a></li>
+            <li><a href="recr.html">RECRUITMENT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="think">
+        <div
+          style="
+            margin-left: 30px;
+            color: white;
+            font-size: 13px;
+            width: 270px;
+            text-align: center;
+          "
+          class="welcome"
+        >
+          <h1 style="font-size: 30px; margin-top: 130px">Welcome</h1>
+          <p style="margin-top: 25px">
+            You are just one minute away from seizing the incredible opportunity
+            to join us on an exciting journey of coding and innovation !
+          </p>
+        </div>
+        <!-- <h3 class="register">Registration Form</h3> -->
+        <br />
+        <!-- form -->
+        <div
+          class="contactForm"
+          style="
+            background-color: rgba(161, 159, 159, 0.3);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          "
+        >
+          <form action="">
+            <p
+              style="
+                font-size: 25px;
+                color: white;
+                text-align: center;
+                margin-bottom: 20px;
+              "
+            >
+              Register with us
+            </p>
+            <div class="in">
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Full Name*</span>
+              </div>
+              <div class="inputBox" style="margin-left: 5%">
+                <input type="text" name="" required="required" />
+                <span>Email*</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <div class="inputBox" style="margin-left: 10px">
+                <input type="text" name="" required="required" id="common" />
+                <span> W/P No*</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 5%">
+                <input type="text" name="" required="required" id="common" />
+                <span>Branch*</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 5%">
+                <input type="text" name="" required="required" id="common" />
+                <span>Year*</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 15px; margin-top: 15px">
+                <select
+                  name="field_of_interest"
+                  required="required"
+                  id="common"
+                >
+                  <option value="" disabled selected>
+                    *Select Field Of Interest
+                  </option>
+                  <option value="app_development">App Development</option>
+                  <option value="web_development">Web Development</option>
+                  <option value="business_model">Business Model</option>
+                  <option value="competitive_coding">Competitive Coding</option>
+                </select>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <div class="inputBox">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>Why You Choose This Field ? *</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 5%">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>What Previous Skill Do You Have ? *</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <div class="inputBox">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>What Are Your Views On Soft Skill ? *</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 5%">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>What are your views on teamwork ? *</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <div class="inputBox">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>What Are Your Views On Soft Skill ? *</span>
+              </div>
+              <div class="inputBox" style="margin-left: 5%">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>Mention Your Previous Achievements ? *</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <div class="inputBox">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>Why Do You Want To Apply ? *</span>
+              </div>
+
+              <div class="inputBox" style="margin-left: 5%">
+                <textarea
+                  required="required"
+                  cols="3"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>Any Other Things You Would Like To Mention ? *</span>
+              </div>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascript for toggeling menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+
+      function hideMenu() {
+        if (navLinks.style.maxWidth <= "700px") {
+          navLinks.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

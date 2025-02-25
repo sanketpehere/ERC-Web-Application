@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC Web Application</title>
+    <link rel="stylesheet" href="../assets/css/styleContact.css" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="../assets/images/logos/myLogo.svg" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="domain.html">DOMAINS</a></li>
+            <li><a href="recr.html">RECRUITMENT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <!-- contact page  -->
+      <section class="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p style="margin-top: 20px">
+            "Don't hesitate to reach out to us if you have any questions or need
+            assistance we're here to help. Thank you!"
+          </p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>
+                  Department Of Computer Engineering,
+                  <br />Government College Of Engineering And Research Awasari
+                  Khurd, Pune. 412405.
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>+91 9028830937</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>EnlecticResearchCentre@gcoeara.ac.in</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm">
+            <form action="">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Email</span>
+              </div>
+
+              <div class="inputBox">
+                <textarea
+                  required="required"
+                  style="min-height: 7em"
+                ></textarea>
+                <span>Type Your Message...</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="send" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Javascript for toggeling menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+
+      function hideMenu() {
+        if (navLinks.style.maxWidth <= "700px") {
+          navLinks.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
